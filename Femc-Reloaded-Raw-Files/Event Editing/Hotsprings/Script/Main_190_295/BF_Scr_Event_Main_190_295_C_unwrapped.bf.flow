@@ -1,0 +1,110 @@
+
+// 
+// FlowScript decompiled using Atlus Script Tools by TGE (2017-2021)
+// In the unfortunate case of any bugs, please report them back to me.
+// 
+
+
+// 
+// Procedure declarations
+// 
+
+// Procedure Index: 0
+void Event_Main_190_295_C_Init()
+{
+}
+
+
+// Procedure Index: 1
+void Event_Main_190_295_C_01()
+{
+    int var0;
+    var0 = EVT_GET_LOCAL_DATA( 0 );
+    EVT_SET_LOCAL_DATA( 47, 0 );
+    
+    if ( var0 == 0 )
+    {
+        
+        if ( GET_HERO_PARAM_LV( 2 ) >= 4 )
+        {
+            EVT_SET_LOCAL_DATA( 47, 1 );
+        }
+        else 
+        {
+            EVT_SET_LOCAL_DATA( 47, 2 );
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 2
+void Event_Main_190_295_C_02()
+{
+    int var1;
+    var1 = EVT_GET_LOCAL_DATA( 1 );
+    EVT_SET_LOCAL_DATA( 46, 0 );
+    
+    if ( var1 == 0 )
+    {
+        
+        if ( GET_HERO_PARAM_LV( 0 ) >= 5 )
+        {
+            EVT_SET_LOCAL_DATA( 46, 1 );
+        }
+        else 
+        {
+            EVT_SET_LOCAL_DATA( 46, 2 );
+        }
+
+    }
+
+}
+
+
+// Procedure Index: 3
+void Event_Main_190_295_C_03()
+{
+    int var2;
+    var2 = EVT_GET_LOCAL_DATA( 2 );
+    EVT_SET_LOCAL_DATA( 45, 0 );
+    
+    if ( var2 == 1 )
+    {
+        
+        if ( GET_HERO_PARAM_LV( 1 ) >= 6 )
+        {
+            EVT_SET_LOCAL_DATA( 45, 1 );
+        }
+        else 
+        {
+            EVT_SET_LOCAL_DATA( 45, 2 );
+        }
+
+    }
+
+}
+
+Bois found
+// Procedure Index: 4
+void Event_Main_190_295_C_04()
+{
+    BIT_ON( ( 148 + 0 ) );
+    BIT_OFF( ( 146 + 0 ) );
+}
+
+Seach failed
+// Procedure Index: 5
+void Event_Main_190_295_C_05()
+{
+    BIT_OFF( ( 148 + 0 ) );
+    BIT_ON( ( 146 + 0 ) );
+}
+
+
+// Procedure Index: 6
+void Event_Main_100_110_C_06()
+{
+}
+
